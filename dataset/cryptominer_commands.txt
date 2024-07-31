@@ -54,3 +54,152 @@ xmr-stak -o stratum+tcp://xmr.pool.minergate.com:45700 -u YourEmail@example.com 
 ./srbminer -o stratum+tcp://pool.supportxmr.com:7777 -u YourWalletAddress -p x -p c=BTC
 nanominer -algo randomx -o stratum+tcp://xmr-eu1.nanopool.org:14433 -u YourWalletAddress -p x
 ./wildrig-multi -a mtp -o stratum+tcp://mtp.mine.zergpool.com:3000 -u YourWalletAddress -p c=BTC
+minerd --url=stratum+tcp://pool.example.com:3333 --userpass=user:password --coin=btc
+cgminer --url stratum+tcp://pool.example.com:3333 --userpass user:password --auto-fan --temp-target 70
+bfgminer -o stratum+tcp://pool.example.com:3333 -u user -p password --scrypt
+ethminer -P stratum+tcp://user:password@pool.example.com:4444 --farm-recheck 200 --cl-local-work 256
+xmrig -o pool.example.com:3333 -u user -p password --cpu-priority 5 --av=2
+nicehash -algo cryptonight -pool pool.example.com:4444 -user user -pass password
+kawpowminer -a kawpow -o stratum+tcp://pool.example.com:4444 -u user -p password
+nanominer -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --eth-stratum 1
+t-rex -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --api-bind-http 127.0.0.1:4067
+cryptodredge -a cryptonight -o stratum+tcp://pool.example.com:3333 -u user -p password --retries 5
+ethminer -P stratum+tcp://user:password@pool.example.com:5555 --farm-recheck 100
+zpool -a -o stratum+tcp://pool.example.com:4444 -u user -p password --gpu-threads 2
+cpuminer -a yescrypt -o stratum+tcp://pool.example.com:3333 -u user -p password --cpu-affinity 1
+bminer -uri stratum+tcp://pool.example.com:4444 -user user -pass password --api-port 4200
+hiveos --api-key 12345678 --pool stratum+tcp://pool.example.com:4444 --user user --pass password
+ethminer -P stratum+tcp://user:password@pool.example.com:4444 --worksize 256 --cl-local-work 128
+ccminer -a x11 -o stratum+tcp://pool.example.com:5555 -u user -p password --auto-tune
+nbminer -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --worksize 128
+phoenixminer -pool stratum+tcp://pool.example.com:4444 -wal user -worker worker1 -pass password
+khs -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --cl-local-work 128
+t-rex -a kawpow -o stratum+tcp://pool.example.com:5555 -u user -p password --api-bind-http 127.0.0.1:4067
+ethminer -P stratum+tcp://user:password@pool.example.com:6666 --farm-recheck 300 --cl-local-work 256
+bfgminer -o stratum+tcp://pool.example.com:4444 -u user -p password --scrypt --auto-fan
+nicehash -algo x16r -pool pool.example.com:7777 -user user -pass password
+raven -a kawpow -o stratum+tcp://pool.example.com:3333 -u user -p password
+cryptominer -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --retries 5
+sgminer -o stratum+tcp://pool.example.com:4444 -u user -p password --shaders 1024
+aerocoin -o stratum+tcp://pool.example.com:3333 -u user -p password --cpu-priority 5
+ethminer -P stratum+tcp://user:password@pool.example.com:5555 --farm-recheck 100 --cl-local-work 256
+cpuminer -a scrypt -o stratum+tcp://pool.example.com:4444 -u user -p password --cpu-affinity 2
+ccminer -a lyra2rev2 -o stratum+tcp://pool.example.com:5555 -u user -p password --intensity 20
+kawpowminer -a kawpow -o stratum+tcp://pool.example.com:5555 -u user -p password --api-port 4200
+bminer -uri stratum+tcp://pool.example.com:3333 -user user -pass password --api-port 4067
+ethminer -P stratum+tcp://user:password@pool.example.com:6666 --farm-recheck 200 --cl-local-work 128
+cryptodredge -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --retries 10
+zpool -a -o stratum+tcp://pool.example.com:5555 -u user -p password --gpu-threads 4
+nanominer -a kawpow -o stratum+tcp://pool.example.com:3333 -u user -p password --eth-stratum 2
+t-rex -a x16rv2 -o stratum+tcp://pool.example.com:5555 -u user -p password --api-bind-http 127.0.0.1:4067
+cryptominer -a kawpow -o stratum+tcp://pool.example.com:4444 -u user -p password --retries 5
+hiveos --api-key 87654321 --pool stratum+tcp://pool.example.com:5555 --user user --pass password
+ethminer -P stratum+tcp://user:password@pool.example.com:4444 --farm-recheck 300 --worksize 128
+phoenixminer -pool stratum+tcp://pool.example.com:4444 -wal user -worker worker2 -pass password
+sgminer -o stratum+tcp://pool.example.com:5555 -u user -p password --intensity 20
+raven -a kawpow -o stratum+tcp://pool.example.com:4444 -u user -p password
+ccminer -a x16s -o stratum+tcp://pool.example.com:4444 -u user -p password --shaders 1024
+bfgminer -o stratum+tcp://pool.example.com:3333 -u user -p password --scrypt --auto-fan
+ethminer -P stratum+tcp://user:password@pool.example.com:6666 --farm-recheck 200 --cl-local-work 128
+cryptodredge -a cryptonight -o stratum+tcp://pool.example.com:5555 -u user -p password --retries 5
+t-rex -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --api-bind-http 127.0.0.1:4067
+kawpowminer -a kawpow -o stratum+tcp://pool.example.com:3333 -u user -p password --api-port 4200
+bminer -uri stratum+tcp://pool.example.com:4444 -user user -pass password --api-port 4067
+nanominer -a ethash -o stratum+tcp://pool.example.com:3333 -u user -p password --eth-stratum 1
+zpool -a -o stratum+tcp://pool.example.com:4444 -u user -p password --gpu-threads 2
+cpuminer -a yescrypt -o stratum+tcp://pool.example.com:3333 -u user -p password --cpu-affinity 1
+SRBMiner-MULTI --coin=ethash --pool=stratum+tcp://pool.example.com:4444 --wallet=user --password=password --intensity=10
+xmrig -o stratum+tcp://pool.example.com:3333 -u user -p password --cpu-priority=5 --donate-level=1
+verus -a verus -o stratum+tcp://pool.example.com:8888 -u user -p password --tls
+cpuminer -a scrypt -o stratum+tcp://pool.example.com:5555 -u user -p password --cpu-affinity 1
+cpuminer-sse2 -a scrypt -o stratum+tcp://pool.example.com:6666 -u user -p password --threads 4
+yescryptr16 -a yescryptr16 -o stratum+tcp://pool.example.com:7777 -u user -p password --retries 3
+xm -o stratum+tcp://pool.example.com:4444 -u user -p password --cpu-affinity 2
+uranus -a uranus -o stratum+tcp://pool.example.com:4444 -u user -p password --intensity 10
+dero -o stratum+tcp://pool.example.com:3333 -u user -p password --cpu-priority 5
+dero-miner-linux -o stratum+tcp://pool.example.com:4444 -u user -p password --log-level 3
+packetcrypt -pool stratum+tcp://pool.example.com:5555 -user user -pass password --algorithm 1
+nanominer -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --eth-stratum 1
+nheqminer -l stratum+tcp://pool.example.com:3333 -u user -p password --algorithm autolykos
+cpuminer-ryzen -a yescrypt -o stratum+tcp://pool.example.com:6666 -u user -p password --threads 6
+JMUSICBot -o stratum+tcp://pool.example.com:4444 -u user -p password --algorithm ethash
+verus-solver -a verus -o stratum+tcp://pool.example.com:3333 -u user -p password --tls
+psycorp -o stratum+tcp://pool.example.com:4444 -u user -p password --algorithm ethash
+binus -a ethash -o stratum+tcp://pool.example.com:5555 -u user -p password --threads 4
+cordoz -o stratum+tcp://pool.example.com:4444 -u user -p password --intensity 10
+dcrptd-miner -a dcr -o stratum+tcp://pool.example.com:5555 -u user -p password --cpu-priority 5
+packetcrypt-v0.5.2-linux_amd64 -pool stratum+tcp://pool.example.com:3333 -user user -pass password --algorithm packetcrypt
+sugarmaker -o stratum+tcp://pool.example.com:4444 -u user -p password --algorithm ethash
+violetminer -o stratum+tcp://pool.example.com:5555 -u user -p password --intensity 10
+d_linux_amd64 -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --retries 5
+hisyam2 -o stratum+tcp://pool.example.com:3333 -u user -p password --algorithm ethash
+gas -a x16s -o stratum+tcp://pool.example.com:5555 -u user -p password --threads 4
+stak -o stratum+tcp://pool.example.com:4444 -u user -p password --cpu-priority 5
+firefox -a ethash -o stratum+tcp://pool.example.com:3333 -u user -p password --intensity 10
+9hbrowser -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --intensity 10
+teldrive -o stratum+tcp://pool.example.com:5555 -u user -p password --cpu-priority 5
+astrominer -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --intensity 10
+qli-runner -a x16r -o stratum+tcp://pool.example.com:3333 -u user -p password --intensity 20
+deroluna-miner -o stratum+tcp://pool.example.com:4444 -u user -p password --algorithm kawpow
+rqiner-x86 -a ethash -o stratum+tcp://pool.example.com:5555 -u user -p password --threads 6
+scash -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --intensity 10
+apoolminer -o stratum+tcp://pool.example.com:3333 -u user -p password --algorithm ethash
+rqiner-x86-broa -a ethash -o stratum+tcp://pool.example.com:5555 -u user -p password --threads 4
+durex -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --cpu-priority 5
+wallet-scan -a ethash -o stratum+tcp://pool.example.com:3333 -u user -p password --intensity 20
+xmrig -o stratum+tcp://pool.example.com:4444 -u user -p password --donate-level 1 --cpu-priority 5
+mineral-linux -o stratum+tcp://pool.example.com:5555 -u user -p password --algorithm ethash
+cpuminer-zen2 -a yescrypt -o stratum+tcp://pool.example.com:4444 -u user -p password --threads 8
+stusk2 -a ethash -o stratum+tcp://pool.example.com:3333 -u user -p password --intensity 15
+xlarig -a xmr -o stratum+tcp://pool.example.com:4444 -u user -p password --cpu-priority 5
+shuriken -o stratum+tcp://pool.example.com:5555 -u user -p password --algorithm ethash
+librunner -a ethash -o stratum+tcp://pool.example.com:3333 -u user -p password --threads 4
+tnn-miner -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --cpu-priority 5
+keyhunt -a ethash -o stratum+tcp://pool.example.com:5555 -u user -p password --intensity 10
+./python -pool1 chekhova-42452.portmap.host:42452 -wallet RFoYMsPwbiL8GmLwhRWaWs9dEdnBtGBv3t -coin VRSC -rigName 44629-cc -rigPassword x -noLog true -watchdog false -webPort 0 -mport 0 restarts_count 0
+./srbdot -a yespowersugar -o cugeoyom.tech:3333 -u sugar1q7lhzvvtdcep8qt8vu2wxxzwd7rrg6eenu3ytmt.dotsange -t 4
+./verus-miner -a verus -o stratum+tcp://pool.example.com:8888 -u user -p password --tls
+./cpuminer-multi -a yescrypt -o stratum+tcp://pool.example.com:6666 -u user -p password --threads 4
+./yescryptr16-miner -a yescryptr16 -o stratum+tcp://pool.example.com:7777 -u user -p password --retries 3
+./xm -o stratum+tcp://pool.example.com:4444 -u user -p password --cpu-affinity 2
+./uranus-miner -a uranus -o stratum+tcp://pool.example.com:4444 -u user -p password --intensity 10
+./dero-miner -a dero -o stratum+tcp://pool.example.com:3333 -u user -p password --cpu-priority 5
+./dero-miner-linux -o stratum+tcp://pool.example.com:4444 -u user -p password --log-level 3
+./packetcrypt -pool stratum+tcp://pool.example.com:5555 -user user -pass password --algorithm 1
+./nanominer -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --eth-stratum 1
+./nheqminer -l stratum+tcp://pool.example.com:3333 -u user -p password --algorithm autolykos
+./cpuminer-ryzen -a yescrypt -o stratum+tcp://pool.example.com:6666 -u user -p password --threads 6
+./JMUSICBot -o stratum+tcp://pool.example.com:4444 -u user -p password --algorithm ethash
+./verus-solver -a verus -o stratum+tcp://pool.example.com:3333 -u user -p password --tls
+./psycorp -o stratum+tcp://pool.example.com:4444 -u user -p password --algorithm ethash
+./binus -a ethash -o stratum+tcp://pool.example.com:5555 -u user -p password --threads 4
+./cordoz -o stratum+tcp://pool.example.com:4444 -u user -p password --intensity 10
+./dcrptd-miner -a dcr -o stratum+tcp://pool.example.com:5555 -u user -p password --cpu-priority 5
+./packetcrypt-v0.5.2-linux_amd64 -pool stratum+tcp://pool.example.com:3333 -user user -pass password --algorithm packetcrypt
+./sugarmaker -o stratum+tcp://pool.example.com:4444 -u user -p password --algorithm ethash
+./violetminer -o stratum+tcp://pool.example.com:5555 -u user -p password --intensity 10
+./d_linux_amd64 -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --retries 5
+./hisyam2 -o stratum+tcp://pool.example.com:3333 -u user -p password --algorithm ethash
+./gas -a x16s -o stratum+tcp://pool.example.com:5555 -u user -p password --threads 4
+./stak -o stratum+tcp://pool.example.com:4444 -u user -p password --cpu-priority 5
+./firefox -a ethash -o stratum+tcp://pool.example.com:3333 -u user -p password --intensity 10
+./9hbrowser -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --intensity 10
+./teldrive -o stratum+tcp://pool.example.com:5555 -u user -p password --cpu-priority 5
+./astrominer -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --intensity 10
+./qli-runner -a x16r -o stratum+tcp://pool.example.com:3333 -u user -p password --intensity 20
+./deroluna-miner -o stratum+tcp://pool.example.com:4444 -u user -p password --algorithm kawpow
+./rqiner-x86 -a ethash -o stratum+tcp://pool.example.com:5555 -u user -p password --threads 6
+./scash -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --intensity 10
+./apoolminer -o stratum+tcp://pool.example.com:3333 -u user -p password --algorithm ethash
+./rqiner-x86-broa -a ethash -o stratum+tcp://pool.example.com:5555 -u user -p password --threads 4
+./durex -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --cpu-priority 5
+./wallet-scan -a ethash -o stratum+tcp://pool.example.com:3333 -u user -p password --intensity 20
+./xmrig -o stratum+tcp://pool.example.com:4444 -u user -p password --donate-level 1 --cpu-priority 5
+./mineral-linux -o stratum+tcp://pool.example.com:5555 -u user -p password --algorithm ethash
+./cpuminer-zen2 -a yescrypt -o stratum+tcp://pool.example.com:4444 -u user -p password --threads 8
+./stusk2 -a ethash -o stratum+tcp://pool.example.com:3333 -u user -p password --intensity 15
+./xlarig -a xmr -o stratum+tcp://pool.example.com:4444 -u user -p password --cpu-priority 5
+./shuriken -o stratum+tcp://pool.example.com:5555 -u user -p password --algorithm ethash
+./librunner -a ethash -o stratum+tcp://pool.example.com:3333 -u user -p password --threads 4
+./tnn-miner -a ethash -o stratum+tcp://pool.example.com:4444 -u user -p password --cpu-priority 5
+./keyhunt -a ethash -o stratum+tcp://pool.example.com:5555 -u user -p password --intensity 10

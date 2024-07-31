@@ -98,3 +98,437 @@ blkid
 lshw -short
 dmesg | less
 strace -e trace=openat ./myprogram
+nginx -g daemon off;
+python3 /home/user/scripts/process_data.py --input data.csv --output results.json
+java -jar /opt/app/myapp.jar --config /etc/app/config.yml
+sshd -D -f /etc/ssh/sshd_config
+node /home/user/projects/app/server.js --port 8080 --env production
+mysql --defaults-file=/etc/mysql/my.cnf -u root -psecret --database=mydb --execute="SELECT * FROM users"
+redis-server --port 6379 --daemonize yes
+docker run --rm -it ubuntu:latest /bin/bash
+ffmpeg -i video.mp4 -vf scale=1280:720 output.mp4
+ssh user@remotehost -i /home/user/.ssh/id_rsa
+tar -czf archive.tar.gz /path/to/directory
+wget -O downloaded_file.zip http://example.com/file.zip
+svn update /path/to/repo
+awk '{print $1}' /var/log/syslog
+grep -r 'error' /var/log/
+curl -X POST -H "Content-Type: application/json" -d '{"key":"value"}' http://api.example.com/resource
+sed -i 's/old/new/g' /path/to/file.txt
+cron -f
+supervisord -c /etc/supervisor/supervisord.conf
+vim /etc/hosts
+python3 -m http.server 8000
+nmap -sP 192.168.1.0/24
+redis-cli --scan --pattern '*error*'
+java -Djava.security.egd=file:/dev/./urandom -jar /path/to/app.jar
+awk -F, '{sum += $3} END {print sum}' data.csv
+socat TCP-LISTEN:8080,fork EXEC:'/usr/bin/another-service'
+openssl req -new -x509 -days 365 -nodes -out /etc/ssl/certs/mycert.pem -keyout /etc/ssl/private/mykey.pem
+virtualenv /home/user/myenv
+pip install -r /home/user/requirements.txt
+pgrep -u user
+screen -S mysession -dm bash -c 'while true; do echo "Hello, World!"; sleep 60; done'
+bash /home/user/scripts/startup.sh --debug
+sh /home/user/scripts/deploy.sh --env production
+docker-compose -f /home/user/docker-compose.yml up -d
+./run-local-tests.sh --test-suite regression
+top -d 2
+find / -name "*.log"
+nginx -c /etc/nginx/nginx.conf
+python3 -m venv /home/user/venv
+java -Xmx1024m -jar /path/to/java-app.jar
+git clone https://github.com/user/repo.git
+apache2 -DFOREGROUND -C 'ServerName localhost'
+rsync -avz /source/dir/ remote:/destination/dir/
+htop --sort-key=PID
+psql -U postgres -d mydb -c 'SELECT * FROM orders;'
+docker exec -it container_name /bin/bash
+ffmpeg -i input.mkv -c:v libx265 -crf 28 output.mkv
+ssh-keygen -t rsa -b 4096 -f /home/user/.ssh/id_rsa
+tar -xzf archive.tar.gz -C /path/to/extract/
+wget -qO- http://example.com/script.sh | sh
+svn commit -m "Commit message"
+awk '/pattern/ {print $0}' /var/log/syslog
+grep 'search_term' /path/to/file.log
+curl -L https://example.com/file.tar.gz | tar xz
+sed 's/old/new/g' /path/to/input.txt > /path/to/output.txt
+crontab -l
+supervisord -n
+redis-cli monitor
+vimdiff file1.txt file2.txt
+python3 /home/user/scripts/web_server.py --host 0.0.0.0 --port 5000
+nmap -p 80,443 192.168.1.1
+redis-cli -h localhost -p 6379 info
+java -jar /path/to/other-app.jar --verbose
+awk '{if ($3 > 100) print $1, $2}' /path/to/data.log
+socat TCP4-LISTEN:8081,reuseaddr,fork EXEC:'/usr/bin/another-process'
+openssl enc -aes-256-cbc -salt -in file.txt -out file.txt.enc
+virtualenv -p python3 /home/user/env
+pip freeze > /home/user/requirements.txt
+pgrep -f java
+screen -S session_name -X quit
+bash /home/user/scripts/run.sh --flag
+sh /home/user/scripts/cleanup.sh
+docker-compose -f /home/user/docker-compose.dev.yml up
+./test-suite.sh --all
+find /var/log/ -name "*.log" -type f
+nginx -t
+python3 -m pip install --upgrade pip
+java -Dlog.level=debug -jar /app.jar
+git pull origin main
+apache2ctl -k restart
+rsync -av --delete /src/dir/ remote:/dst/dir/
+htop -d 5
+ps aux | grep 'process_name'
+docker build -t myimage:latest .
+ffmpeg -i video.avi -vf "fps=25,scale=640:360" output.mp4
+ssh -L 8080:localhost:80 user@remotehost
+tar -cvf archive.tar /path/to/directory
+wget --limit-rate=200k http://example.com/bigfile.zip
+svn update --force
+awk -F':' '{print $1}' /etc/passwd
+grep 'pattern' /var/log/syslog
+curl -s http://example.com/api/data
+sed -e 's/foo/bar/g' input.txt -i
+crond -f
+supervisorctl status
+redis-server --loglevel warning
+vim /home/user/.bashrc
+python3 /home/user/scripts/monitor.py
+nmap -A 192.168.1.1
+redis-cli --latency
+java -Xmx2048m -jar /opt/app.jar
+awk '{print $2}' /var/log/messages
+socat -u - TCP:remotehost:1234
+openssl dgst -sha256 -sign /home/user/private_key.pem -out /home/user/signature.sig /home/user/document.txt
+virtualenv /home/user/env -p python3.9
+pip install flask
+pgrep -l python
+screen -S test -dm bash -c 'echo "Running tests"; sleep 120'
+bash /scripts/setup.sh --option
+sh /scripts/cleanup.sh
+docker-compose -f docker-compose.prod.yml down
+./build-project.sh --release
+find /etc/ -name "*.conf"
+nginx -s stop
+python3 -m http.server 8080 --bind 127.0.0.1
+java -jar /opt/java-app.jar --server.port=8080
+git status
+apache2ctl configtest
+rsync -avz --exclude '*.tmp' /source/dir/ remote:/destination/dir/
+htop -u user
+ps aux | grep 'python'
+docker pull ubuntu:latest
+ffmpeg -i input.avi -c:v libx264 -crf 23 output.mp4
+ssh-keygen -t ed25519 -f /home/user/.ssh/id_ed25519
+tar -xvf archive.tar -C /path/to/extract/
+wget -nc http://example.com/file.zip
+svn info
+awk -F, '{print $2}' /path/to/data.csv
+grep -i 'error' /var/log/syslog
+curl -X GET http://api.example.com/resource
+sed -i 's/oldtext/newtext/' /path/to/file.txt
+crontab /home/user/crontab.txt
+supervisord -c /etc/supervisor/supervisord.conf -n
+redis-cli -p 6379 monitor
+vim /home
+nginx -g daemon off;
+python3 /home/user/scripts/process_data.py --input data.csv --output results.json --verbose --log-level debug --retry 3
+java -jar /opt/app/myapp.jar --config /etc/app/config.yml --log-level info --max-threads 8
+sshd -D -f /etc/ssh/sshd_config -o PermitRootLogin=no -o PasswordAuthentication=yes
+node /home/user/projects/app/server.js --port 8080 --env production --enable-logging --max-old-space-size=2048
+mysql --defaults-file=/etc/mysql/my.cnf -u root -psecret --database=mydb --execute="SELECT * FROM users WHERE active=1;" --batch
+redis-server --port 6379 --daemonize yes --save 900 1 --loglevel warning
+docker run --rm -it -v /host/data:/container/data ubuntu:latest /bin/bash -c "ls -la /container/data"
+ffmpeg -i video.mp4 -vf scale=1280:720 -c:v libx264 -preset slow -crf 23 output.mp4
+ssh user@remotehost -i /home/user/.ssh/id_rsa -p 2222 -o StrictHostKeyChecking=no
+tar -czf archive.tar.gz /path/to/directory --exclude='*.tmp' --warning=no-file-changed
+wget -O downloaded_file.zip --limit-rate=500k http://example.com/file.zip
+svn update /path/to/repo --accept theirs-full --quiet
+awk '{print $1, $3}' /var/log/syslog | sort | uniq
+grep -r --include='*.log' 'error' /var/log/ --exclude-dir={temp,cache}
+curl -X POST -H "Content-Type: application/json" -d '{"key":"value", "id":123}' http://api.example.com/resource --silent
+sed -i 's/old/new/g; s/obsolete/replacement/g' /path/to/file.txt
+cron -f -L 15
+supervisord -c /etc/supervisor/supervisord.conf --nodaemon --loglevel debug
+vim /etc/hosts -c ':syntax on'
+python3 -m http.server 8000 --bind 127.0.0.1 --directory /home/user/www
+nmap -A -T4 -p 80,443,22 192.168.1.1-50
+redis-cli --scan --pattern '*error*' --count 100
+java -Djava.security.egd=file:/dev/./urandom -Xmx2048m -jar /path/to/app.jar --server.port=8080 --logging.file=/var/log/app.log
+awk -F, '{if ($3 > 100) print $1, $2, $3}' /path/to/data.log | sort -k3,3nr
+socat TCP4-LISTEN:8081,reuseaddr,fork EXEC:'/usr/bin/another-process',pty,echo=0,raw
+openssl enc -aes-256-cbc -salt -in file.txt -out file.txt.enc -pass pass:mysecretpassword
+virtualenv /home/user/env -p python3.9 --system-site-packages
+pip install --upgrade -r /home/user/requirements.txt --timeout 120
+pgrep -u user -f 'java'
+screen -S test -dm bash -c 'echo "Starting session"; sleep 300; echo "Session ended";'
+bash /home/user/scripts/run.sh --flag1 --flag2 --option=value
+sh /home/user/scripts/cleanup.sh --dry-run --verbose
+docker-compose -f /home/user/docker-compose.yml up -d --build --remove-orphans
+./build-project.sh --release --verbose --jobs 4
+find /var/log/ -name "*.log" -type f -mtime -7 -print
+nginx -c /etc/nginx/nginx.conf -g 'daemon on; master_process on;'
+python3 -m venv /home/user/venv --prompt "MyEnv"
+java -Xmx2048m -Xms1024m -Dlog.level=debug -jar /path/to/java-app.jar --server.port=8080
+git clone --depth 1 https://github.com/user/repo.git --branch main
+apache2 -DFOREGROUND -C 'ServerName localhost' -C 'ErrorLog /var/log/apache2/error.log'
+rsync -avz --delete --exclude='*.tmp' /source/dir/ remote:/destination/dir/
+htop -d 5 -u user --sort-key=MEM
+ps aux | grep 'process_name' --color=always
+docker build -t myimage:latest -f /home/user/Dockerfile /path/to/context
+ffmpeg -i input.mkv -c:v libx265 -crf 28 -preset medium output.mkv
+ssh-keygen -t rsa -b 4096 -f /home/user/.ssh/id_rsa -C "your_email@example.com"
+tar -xzf archive.tar.gz -C /path/to/extract/ --strip-components=1
+wget -qO- http://example.com/script.sh | bash --login
+svn commit -m "Commit message" --username user --password pass
+awk '/pattern/ {print $0}' /var/log/syslog --field-separator=' '
+grep 'search_term' /path/to/file.log --include='*.log'
+curl -L -o file.tar.gz http://example.com/file.tar.gz
+sed -i 's/oldtext/newtext/' /path/to/file.txt --backup=original
+crontab /home/user/crontab.txt --user=otheruser
+supervisord -c /etc/supervisor/supervisord.conf --pidfile=/var/run/supervisord.pid
+redis-cli -h localhost -p 6379 --timeout 5 --raw info
+vimdiff file1.txt file2.txt -c 'wq'
+python3 /home/user/scripts/server.py --port 8080 --host 0.0.0.0 --workers 4
+nmap -sS -O -p 80,443 192.168.1.1
+redis-cli --latency -h localhost -p 6379
+java -Djava.security.egd=file:/dev/./urandom -Xmx4096m -Xms2048m -jar /opt/app.jar --server.port=8080 --spring.profiles.active=prod
+awk -F, '{print $1, $2, $3}' /path/to/data.csv | sort -k3,3n
+socat TCP-LISTEN:8081,fork,reuseaddr EXEC:'/usr/bin/another-service',pty,echo=0,raw
+openssl dgst -sha256 -sign /home/user/private_key.pem -out /home/user/signature.sig /home/user/document.txt
+virtualenv -p python3.9 /home/user/env --clear
+pip install --upgrade --timeout 120 flask requests
+pgrep -l -f 'python'
+screen -S test -dm bash -c 'echo "Running tests"; sleep 600; echo "Tests completed";'
+bash /scripts/setup.sh --option1 --option2=value
+sh /scripts/cleanup.sh --force
+docker-compose -f docker-compose.prod.yml up --detach --build --force-recreate
+./run-local-tests.sh --test-suite=regression --browser=chrome
+find /etc/ -name "*.conf" -type f -print0 | xargs -0 grep 'pattern'
+nginx -t -c /etc/nginx/nginx.conf
+python3 -m pip install --upgrade pip --timeout 60
+java -Xmx2048m -Xms1024m -Dlog.level=debug -jar /path/to/java-app.jar --server.port=8080 --logging.file=/var/log/app.log
+git pull origin main --rebase
+apache2ctl -k restart -D FOREGROUND
+rsync -avz --exclude='*.tmp' /src/dir/ remote:/dst/dir/
+htop --sort-key=CPU --tree
+ps aux | grep 'java' --color=always
+docker pull ubuntu:latest --all-tags
+ffmpeg -i input.avi -c:v libx264 -crf 23 -preset slow output.mp4
+ssh-keygen -t ed25519 -f /home/user/.ssh/id_ed25519 -C "your_email@example.com"
+tar -xvf archive.tar -C /path/to/extract/ --strip-components=2
+wget -nc --retry-connrefused http://example.com/file.zip
+svn info --username user --password pass
+awk -F':' '{print $1}' /etc/passwd | sort
+grep -i 'error' /var/log/syslog --exclude='*.gz'
+curl -X GET -H "Authorization: Bearer token" http://api.example.com/resource
+sed -i 's/oldtext/newtext/g' /path/to/input.txt -i
+crond -f --log-level=debug
+supervisorctl update --configuration=/etc/supervisor/supervisord.conf
+redis-server --save 900 1 --loglevel notice --daemonize yes
+vim /home/user/.vimrc -c 'syntax on' -c 'set number'
+python3 /home/user/scripts/web_server.py --host 0.0.0.0 --port 5000 --reload --workers 2
+nmap -sP -T4 192.168.1.0/24
+redis-cli --scan --pattern '*error*' --count 50
+java -Djava.security.egd=file:/dev/./urandom -Xmx4096m -Xms2048m -jar /path/to/app.jar --server.port=8080 --spring.profiles.active=prod
+awk -F, '{if ($3 > 100) print $1, $2, $3}' /path/to/data.log | sort -k3,3nr
+socat -u - TCP:remotehost:1234,reuseaddr,fork
+openssl enc -aes-256-cbc -salt -in /path/to/file.txt -out /path/to/file.txt.enc -pass pass:secret
+virtualenv --system-site-packages -p python3.8 /home/user/env
+pip install --upgrade requests beautifulsoup4 --timeout 60
+pgrep -f 'java -jar'
+screen -S session_name -X quit
+bash /home/user/scripts/run.sh --flag1 --flag2 --option=value
+sh /home/user/scripts/cleanup.sh --verbose
+docker-compose -f /home/user/docker-compose.yml up -d --build --remove-orphans
+./run-tests.sh --suite=regression --browser=firefox
+find /var/log/ -name "*.log" -type f -mtime -1 -print0 | xargs -0 grep 'pattern'
+nginx -s reload -c /etc/nginx/nginx.conf
+python3 -m venv /home/user/venv --prompt "MyProjectEnv"
+java -Xmx4096m -Xms2048m -Dlog.level=info -jar /path/to/java-app.jar --server.port=8080 --logging.file=/var/log/app.log
+git fetch origin --tags --prune
+apache2ctl -k graceful
+rsync -avz --exclude='*.tmp' /source/dir/ remote:/destination/dir/
+htop --sort-key=MEM --filter 'user'
+ps aux | grep 'node' --color=always
+docker build -t myimage:latest -f /home/user/Dockerfile /path/to/context --no-cache
+ffmpeg -i input.mp4 -vf "scale=1280:720,fps=30" -c:v libx264 -crf 23 -preset medium output.mp4
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com" -f /home/user/.ssh/id_rsa
+tar -xzf archive.tar.gz -C /path/to/extract/ --strip-components=1 --wildcards '*.txt'
+wget -O file.zip http://example.com/file.zip --retry-connrefused
+svn status --no-ignore
+awk '/pattern/ {print $1, $2, $3}' /var/log/syslog --field-separator=' '
+grep 'search_term' /path/to/file.log --include='*.log' --exclude='*.gz'
+curl -L -H "Authorization: Bearer token" http://api.example.com/resource -o output.json
+sed -i 's/old/new/g' /path/to/file.txt --backup=original
+crontab /home/user/crontab.txt --user=otheruser --force
+supervisord -c /etc/supervisor/supervisord.conf --pidfile=/var/run/supervisord.pid --loglevel=info
+redis-cli -p 6379 --timeout 10 info
+vimdiff file1.txt file2.txt -c 'diffthis'
+python3 /home/user/scripts/server.py --host 0.0.0.0 --port 8080 --workers 4 --reload
+nmap -sS -p 80,443 192.168.1.1 --unprivileged
+redis-cli --latency -h localhost -p 6379 --timeout 10
+java -Xmx4096m -Xms2048m -Djava.security.egd=file:/dev/./urandom -jar /path/to/java-app.jar --server.port=8080 --spring.profiles.active=prod
+awk -F, '{print $1, $2, $3}' /path/to/data.csv | sort -k2,2
+socat TCP4-LISTEN:8082,reuseaddr,fork EXEC:'/usr/bin/another-process',pty,echo=0,raw
+openssl dgst -sha256 -sign /home/user/private_key.pem -out /home/user/signature.sig /home/user/document.txt --passin pass:secret
+virtualenv -p python3.9 /home/user/env --system-site-packages
+pip install --upgrade flask requests beautifulsoup4 --timeout 120
+pgrep -l -f 'python'
+screen -S test -dm bash -c 'echo "Starting tests"; sleep 600; echo "Tests completed";'
+bash /scripts/setup.sh --option1 --option2=value
+sh /scripts/cleanup.sh --force
+docker-compose -f docker-compose.prod.yml up --detach --build --force-recreate
+./run-local-tests.sh --test-suite=regression --browser=chrome
+find /etc/ -name "*.conf" -type f -print0 | xargs -0 grep 'pattern'
+nginx -s reload -c /etc/nginx/nginx.conf
+python3 -m pip install --upgrade pip --timeout 60
+java -Xmx2048m -Xms1024m -Dlog.level=debug -jar /path/to/java-app.jar --server.port=8080 --logging.file=/var/log/app.log
+git pull origin main --rebase
+apache2ctl -k restart -D FOREGROUND
+rsync -avz --exclude='*.tmp' /src/dir/ remote:/dst/dir/
+htop --sort-key=CPU --tree
+ps aux | grep 'java' --color=always
+docker pull ubuntu:latest --all-tags
+ffmpeg -i input.avi -c:v libx264 -crf 23 -preset slow output.mp4
+ssh-keygen -t ed25519 -f /home/user/.ssh/id_ed25519 -C "your_email@example.com"
+tar -xvf archive.tar -C /path/to/extract/ --strip-components=2
+wget -nc --retry-connrefused http://example.com/file.zip
+svn info --username user --password pass
+awk -F':' '{print $1}' /etc/passwd | sort
+grep -i 'error' /var/log/syslog --exclude='*.gz'
+curl -X GET -H "Authorization: Bearer token" http://api.example.com/resource
+sed -i 's/oldtext/newtext/g' /path/to/input.txt -i
+crond -f --log-level=debug
+supervisorctl update --configuration=/etc/supervisor/supervisord.conf
+redis-server --save 900 1 --loglevel notice --daemonize yes
+vim /home/user/.vimrc -c 'syntax on' -c 'set number'
+python3 /home/user/scripts/web_server.py --host 0.0.0.0 --port 5000 --reload --workers 2
+nmap -sP -T4 192.168.1.0/24
+redis-cli --scan --pattern '*error*' --count 50
+java -Djava.security.egd=file:/dev/./urandom -Xmx4096m -Xms2048m -jar /path/to/app.jar --server.port=8080 --spring.profiles.active=prod
+awk -F, '{if ($3 > 100) print $1, $2, $3}' /path/to/data.log | sort -k3,3nr
+socat -u - TCP:remotehost:1234,reuseaddr,fork
+openssl enc -aes-256-cbc -salt -in /path/to/file.txt -out /path/to/file.txt.enc -pass pass:secret
+virtualenv --system-site-packages -p python3.8 /home/user/env
+pip install --upgrade requests beautifulsoup4 --timeout 60
+pgrep -f 'java -jar'
+screen -S session_name -X quit
+bash /home/user/scripts/run.sh --flag1 --flag2 --option=value
+sh /home/user/scripts/cleanup.sh --verbose
+docker-compose -f /home/user/docker-compose.yml up -d --build --remove-orphans
+./run-tests.sh --suite=regression --browser=firefox
+find /var/log/ -name "*.log" -type f -mtime -1 -print0 | xargs -0 grep 'pattern'
+nginx -s reload -c /etc/nginx/nginx.conf
+python3 -m venv /home/user/venv --prompt "MyProjectEnv"
+java -Xmx4096m -Xms2048m -Dlog.level=info -jar /path/to/java-app.jar --server.port=8080 --logging.file=/var/log/app.log
+git fetch origin --tags --prune
+apache2ctl -k graceful
+rsync -avz --exclude='*.tmp' /source/dir/ remote:/destination/dir/
+htop --sort-key=MEM --filter 'user'
+ps aux | grep 'node' --color=always
+docker build -t myimage:latest -f /home/user/Dockerfile /path/to/context --no-cache
+ffmpeg -i input.mp4 -vf "scale=1280:720,fps=30" -c:v libx264 -crf 23 -preset medium output.mp4
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com" -f /home/user/.ssh/id_rsa
+tar -xzf archive.tar.gz -C /path/to/extract/ --strip-components=1 --wildcards '*.txt'
+wget -O file.zip http://example.com/file.zip --retry-connrefused
+svn status --no-ignore
+awk '/pattern/ {print $1, $2, $3}' /var/log/syslog --field-separator=' '
+grep 'search_term' /path/to/file.log --include='*.log' --exclude='*.gz'
+curl -L -H "Authorization: Bearer token" http://api.example.com/resource -o output.json
+sed -i 's/old/new/g' /path/to/file.txt --backup=original
+crontab /home/user/crontab.txt --user=otheruser --force
+supervisord -c /etc/supervisor/supervisord.conf --pidfile=/var/run/supervisord.pid --loglevel=info
+redis-cli -p 6379 --timeout 10 info
+vimdiff file1.txt file2.txt -c 'diffthis'
+python3 /home/user/scripts/server.py --host 0.0.0.0 --port 8080 --workers 4 --reload
+nmap -sS -p 80,443 192.168.1.1 --unprivileged
+redis-cli --latency -h localhost -p 6379 --timeout 10
+java -Xmx4096m -Xms2048m -Djava.security.egd=file:/dev/./urandom -jar /path/to/java-app.jar --server.port=8080 --spring.profiles.active=prod
+awk -F, '{print $1, $2, $3}' /path/to/data.csv | sort -k2,2
+socat TCP4-LISTEN:8082,reuseaddr,fork EXEC:'/usr/bin/another-process',pty,echo=0,raw
+openssl dgst -sha256 -sign /home/user/private_key.pem -out /home/user/signature.sig /home/user/document.txt --passin pass:secret
+virtualenv -p python3.9 /home/user/env --system-site-packages
+pip install --upgrade flask requests beautifulsoup4 --timeout 120
+pgrep -l -f 'python'
+screen -S test -dm bash -c 'echo "Starting tests"; sleep 600; echo "Tests completed";'
+bash /scripts/setup.sh --option1 --option2=value
+sh /scripts/cleanup.sh --force
+docker-compose -f docker-compose.prod.yml up --detach --build --force-recreate
+./run-local-tests.sh --test-suite=regression --browser=chrome
+find /etc/ -name "*.conf" -type f -print0 | xargs -0 grep 'pattern'
+nginx -s reload -c /etc/nginx/nginx.conf
+python3 -m pip install --upgrade pip --timeout 60
+java -Xmx2048m -Xms1024m -Dlog.level=debug -jar /path/to/java-app.jar --server.port=8080 --logging.file=/var/log/app.log
+git pull origin main --rebase
+apache2ctl -k restart -D FOREGROUND
+rsync -avz --exclude='*.tmp' /src/dir/ remote:/dst/dir/
+htop --sort-key=CPU --tree
+ps aux | grep 'java' --color=always
+docker pull ubuntu:latest --all-tags
+ffmpeg -i input.avi -c:v libx264 -crf 23 -preset slow output.mp4
+ssh-keygen -t ed25519 -f /home/user/.ssh/id_ed25519 -C "your_email@example.com"
+tar -xvf archive.tar -C /path/to/extract/ --strip-components=2
+wget -nc --retry-connrefused http://example.com/file.zip
+svn info --username user --password pass
+awk -F':' '{print $1}' /etc/passwd | sort
+grep -i 'error' /var/log/syslog --exclude='*.gz'
+curl -X GET -H "Authorization: Bearer token" http://api.example.com/resource
+sed -i 's/oldtext/newtext/g' /path/to/input.txt -i
+crond -f --log-level=debug
+supervisorctl update --configuration=/etc/supervisor/supervisord.conf
+redis-server --save 900 1 --loglevel notice --daemonize yes
+vim /home/user/.vimrc -c 'syntax on' -c 'set number'
+python3 /home/user/scripts/web_server.py --host 0.0.0.0 --port 5000 --reload --workers 2
+nmap -sP -T4 192.168.1.0/24
+redis-cli --scan --pattern '*error*' --count 50
+java -Djava.security.egd=file:/dev/./urandom -Xmx4096m -Xms2048m -jar /path/to/app.jar --server.port=8080 --spring.profiles.active=prod
+awk -F, '{if ($3 > 100) print $1, $2, $3}' /path/to/data.log | sort -k3,3nr
+socat -u - TCP:remotehost:1234,reuseaddr,fork
+openssl enc -aes-256-cbc -salt -in /path/to/file.txt -out /path/to/file.txt.enc -pass pass:secret
+virtualenv --system-site-packages -p python3.8 /home/user/env
+pip install --upgrade requests beautifulsoup4 --timeout 60
+pgrep -f 'java -jar'
+screen -S session_name -X quit
+bash /home/user/scripts/run.sh --flag1 --flag2 --option=value
+sh /home/user/scripts/cleanup.sh --verbose
+docker-compose -f /home/user/docker-compose.yml up -d --build --remove-orphans
+./run-tests.sh --suite=regression --browser=firefox
+find /var/log/ -name "*.log" -type f -mtime -1 -print0 | xargs -0 grep 'pattern'
+nginx -s reload -c /etc/nginx/nginx.conf
+python3 -m venv /home/user/venv --prompt "MyProjectEnv"
+java -Xmx4096m -Xms2048m -Dlog.level=info -jar /path/to/java-app.jar --server.port=8080 --logging.file=/var/log/app.log
+git fetch origin --tags --prune
+apache2ctl -k graceful
+rsync -avz --exclude='*.tmp' /source/dir/ remote:/destination/dir/
+htop --sort-key=MEM --filter 'user'
+ps aux | grep 'node' --color=always
+docker build -t myimage:latest -f /home/user/Dockerfile /path/to/context --no-cache
+ffmpeg -i input.mp4 -vf "scale=1280:720,fps=30" -c:v libx264 -crf 23 -preset medium output.mp4
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com" -f /home/user/.ssh/id_rsa
+tar -xzf archive.tar.gz -C /path/to/extract/ --strip-components=1 --wildcards '*.txt'
+wget -O file.zip http://example.com/file.zip --retry-connrefused
+svn status --no-ignore
+awk '/pattern/ {print $1, $2, $3}' /var/log/syslog --field-separator=' '
+grep 'search_term' /path/to/file.log --include='*.log' --exclude='*.gz'
+curl -L -H "Authorization: Bearer token" http://api.example.com/resource -o output.json
+sed -i 's/old/new/g' /path/to/file.txt --backup=original
+crontab /home/user/crontab.txt --user=otheruser --force
+supervisord -c /etc/supervisor/supervisord.conf --pidfile=/var/run/supervisord.pid --loglevel=info
+redis-cli -p 6379 --timeout 10 info
+vimdiff file1.txt file2.txt -c 'diffthis'
+python3 /home/user/scripts/server.py --host 0.0.0.0 --port 8080 --workers 4 --reload
+nmap -sS -p 80,443 192.168.1.1 --unprivileged
+redis-cli --latency -h localhost -p 6379 --timeout 10
+java -Xmx4096m -Xms2048m -Djava.security.egd=file:/dev/./urandom -jar /path/to/java-app.jar --server.port=8080 --spring.profiles.active=prod
+awk -F, '{print $1, $2, $3}' /path/to/data.csv | sort -k2,2
+socat TCP4-LISTEN:8082,reuseaddr,fork EXEC:'/usr/bin/another-process',pty,echo=0,raw
+openssl dgst -sha256 -sign /home/user/private_key.pem -out /home/user/signature.sig /home/user/document.txt --passin pass:secret
+virtualenv -p python3.9 /home/user/env --system-site-packages
+pip install --upgrade flask requests beautifulsoup4 --timeout 120
+pgrep -l -f 'python'
+screen -S test -dm bash -c 'echo "Starting tests"; sleep 600; echo "Tests completed";'
+bash /scripts/setup.sh --option1 --option2=value
+sh /scripts/cleanup.sh --force
