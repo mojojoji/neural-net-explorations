@@ -1,0 +1,56 @@
+./xmrig -o pool.supportxmr.com:3333 -u 42xWpA3mB7wzCTDPLjTuFtdRgqfrR1A1EE1GW8TDvG1Ak1j7x23MmPqHZaLkKs2N8F42c -p x -k
+./ethminer -P stratum+tcp://us1.ethermine.org:4444 -O 0xYourWalletAddress.workerName
+./ccminer -a x17 -o stratum+tcp://pool.coinminerz.com:3373 -u M8oHQ3mT8C8E4m7f7h3A5o4oD4o9P6B5J9 -p x
+./bminer -uri stratum://YourWalletAddress@eth-us-east1.nanopool.org:9999
+./cgminer -o stratum+tcp://pool.ckpool.org:3333 -u 1PSSGeFHDnKNxiEyFrD1wcEaHr9hrQDDWc -p x
+./minerd -a scrypt -t 4 -s 6 -o stratum+tcp://litecoinpool.org:3333 -O YourWalletAddress.worker
+./sgminer -k algorithm -o stratum+tcp://pool.example.com:4444 -u YourWalletAddress -p x
+./cpuminer -o stratum+tcp://btc.pool.minergate.com:3333 -u YourEmail@example.com -p x
+./nicehash -a equihash -o stratum+tcp://equihash.eu.nicehash.com:3357 -u YourBitcoinAddress.worker1 -p x
+./ewbf-miner --server zec-eu1.nanopool.org --user YourZCashAddress.worker1 --pass x --port 6666
+./claymore -epool eth-eu1.nanopool.org:9999 -ewal YourEthereumWalletAddress/worker1 -epsw x
+./phoenixminer -pool ssl://us1.ethermine.org:5555 -wal YourWalletAddress/workerName -pass x
+./hiveos -f 2 -o stratum+tcp://ethpool.org:3333 -u YourWalletAddress -p x
+./gminer --algo 144_5 --server btg.suprnova.cc --user YourUsername --pass YourPassword
+./trex -a ethash -o stratum+tcp://us2.ethermine.org:4444 -u YourWalletAddress -p x
+./teamredminer -a cnv8 -o stratum+tcp://pool.monero.hashvault.pro:3333 -u YourWalletAddress -p x
+./miner --algo verushash --server verushash.eu.mine.zergpool.com:3300 --user YourWalletAddress --pass c=LTC
+./bfgminer -o stratum+tcp://eu.stratum.slushpool.com:3333 -u YourUsername.worker1 -p YourPassword
+./cpu-miner -o stratum+tcp://eu.bsod.pw:6660 -u YourWalletAddress.worker -p x
+./z-enemy -a x16r -o stratum+tcp://rvn.suprnova.cc:6667 -u YourWalletAddress -p x
+./nbminer -a cuckaroo -o stratum+tcp://grin.sparkpool.com:6667 -u YourWalletAddress -p x
+./lolminer --coin BEAM --pool beam-eu.sparkpool.com:2222 --user YourWalletAddress --pass x
+./cudaminer -o stratum+tcp://ltc.pool.minergate.com:3333 -u YourEmail@example.com -p x
+./kawpowminer -U -P stratum+tcp://rvn.2miners.com:6060 -u YourWalletAddress.worker1
+./srbminer -o stratum+tcp://pool.supportxmr.com:7777 -u YourWalletAddress -p x -p c=BTC
+./nanominer -algo randomx -o stratum+tcp://xmr-eu1.nanopool.org:14433 -u YourWalletAddress -p x
+./wildrig-multi -a mtp -o stratum+tcp://mtp.mine.zergpool.com:3000 -u YourWalletAddress -p c=BTC
+./grin-miner -o stratum+tcp://grin.sparkpool.com:6667 -u YourWalletAddress.worker -p x
+./ethminer -P stratum+tcp://eu1.ethermine.org:4444 -O YourWalletAddress.workerName
+./vertminer -o stratum+tcp://vertcoin.pool.minergate.com:3052 -u YourEmail@example.com -p x
+./cryptonight -a cryptonight -o stratum+tcp://xmr-us-east1.nanopool.org:14433 -u YourWalletAddress -p x
+xmr-stak -o stratum+tcp://xmr.pool.minergate.com:45700 -u YourEmail@example.com -p x
+./hashkiller -o stratum+tcp://pool.hashkiller.io:3333 -u YourWalletAddress -p x
+./miner -a equihash -o stratum+tcp://zec.pool.minergate.com:3357 -u YourEmail@example.com -p x
+./bminer -uri stratum://YourWalletAddress@eth-asia1.nanopool.org:9999
+./cgminer -o stratum+tcp://litecoinpool.org:3333 -u YourWalletAddress -p x
+./claymore -epool eth-asia1.nanopool.org:9999 -ewal YourEthereumWalletAddress/worker1 -epsw x
+./xmrig -o pool.hashvault.pro:3333 -u YourWalletAddress -p x
+./nicehash -a x16r -o stratum+tcp://rvn.2miners.com:6060 -u YourWalletAddress.worker1 -p x
+./ewbf-miner --server zec-us1.nanopool.org --user YourZCashAddress.worker1 --pass x --port 6666
+./phoenixminer -pool ssl://us2.ethermine.org:5555 -wal YourWalletAddress/workerName -pass x
+./hiveos -f 4 -o stratum+tcp://ethpool.org:3333 -u YourWalletAddress -p x
+./gminer --algo 144_5 --server btg.suprnova.cc --user YourUsername --pass YourPassword
+./trex -a ethash -o stratum+tcp://us2.ethermine.org:4444 -u YourWalletAddress -p x
+./teamredminer -a cnv8 -o stratum+tcp://pool.monero.hashvault.pro:3333 -u YourWalletAddress -p x
+./miner --algo verushash --server verushash.eu.mine.zergpool.com:3300 --user YourWalletAddress --pass c=LTC
+./bfgminer -o stratum+tcp://eu.stratum.slushpool.com:3333 -u YourUsername.worker1 -p YourPassword
+./cpu-miner -o stratum+tcp://eu.bsod.pw:6660 -u YourWalletAddress.worker -p x
+./z-enemy -a x16r -o stratum+tcp://rvn.suprnova.cc:6667 -u YourWalletAddress -p x
+./nbminer -a cuckaroo -o stratum+tcp://grin.sparkpool.com:6667 -u YourWalletAddress -p x
+./lolminer --coin BEAM --pool beam-eu.sparkpool.com:2222 --user YourWalletAddress --pass x
+./cudaminer -o stratum+tcp://ltc.pool.minergate.com:3333 -u YourEmail@example.com -p x
+./kawpowminer -U -P stratum+tcp://rvn.2miners.com:6060 -u YourWalletAddress.worker1
+./srbminer -o stratum+tcp://pool.supportxmr.com:7777 -u YourWalletAddress -p x -p c=BTC
+nanominer -algo randomx -o stratum+tcp://xmr-eu1.nanopool.org:14433 -u YourWalletAddress -p x
+./wildrig-multi -a mtp -o stratum+tcp://mtp.mine.zergpool.com:3000 -u YourWalletAddress -p c=BTC

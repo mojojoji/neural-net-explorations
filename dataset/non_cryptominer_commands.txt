@@ -1,0 +1,100 @@
+ls -l /home/user/documents
+cp /etc/hosts /home/user/backup/hosts.bak
+mv /tmp/file.txt /var/tmp/file.txt
+rm -rf /tmp/old_logs
+mkdir /home/user/new_folder
+touch /home/user/new_file.txt
+grep "error" /var/log/syslog
+echo "Hello, World!" > /home/user/hello.txt
+cat /etc/passwd
+find /home/user -name "*.jpg"
+df -h
+du -sh /home/user
+top
+ps aux | grep apache2
+ifconfig
+ping google.com
+sudo apt-get update
+sudo apt-get install vim
+tar -xzf archive.tar.gz -C /home/user/extracted
+unzip archive.zip -d /home/user/extracted
+wget https://example.com/file.zip
+curl -O https://example.com/file.zip
+chmod 755 /home/user/script.sh
+chown user:user /home/user/important_file.txt
+sudo reboot
+sudo shutdown -h now
+systemctl status nginx
+journalctl -xe
+locate file.txt
+mount /dev/sda1 /mnt
+umount /mnt
+history
+man ls
+alias ll='ls -la'
+sudo useradd newuser
+sudo passwd newuser
+ip a
+netstat -tuln
+docker run hello-world
+docker ps
+git clone https://github.com/example/repo.git
+git pull origin main
+git commit -m "Update readme"
+svn checkout https://svn.example.com/repo
+svn update
+mysql -u root -p
+psql -U postgres
+vi /etc/nginx/nginx.conf
+nano /home/user/config.txt
+ssh user@host
+scp /home/user/file.txt user@host:/remote/path
+rsync -avz /local/path user@host:/remote/path
+brew install wget
+pip install requests
+npm install express
+java -jar app.jar
+python3 script.py
+node server.js
+ruby script.rb
+perl script.pl
+make
+cmake .
+g++ -o myprogram myprogram.cpp
+gcc -o myprogram myprogram.c
+sudo systemctl restart apache2
+sudo systemctl stop mysql
+sudo systemctl start docker
+sudo systemctl enable nginx
+systemctl disable apache2
+sudo ufw allow 22/tcp
+sudo ufw deny 80/tcp
+sudo ufw status
+tar -cf archive.tar /home/user
+gzip /home/user/file.txt
+bzip2 /home/user/file.txt
+xz /home/user/file.txt
+chmod 644 /home/user/file.txt
+chgrp developers /home/user/file.txt
+diff file1.txt file2.txt
+awk '{print $1}' /home/user/file.txt
+sed 's/old/new/g' /home/user/file.txt
+sort /home/user/file.txt
+uniq /home/user/file.txt
+cut -d, -f1 /home/user/file.csv
+head -n 10 /home/user/file.txt
+tail -n 10 /home/user/file.txt
+watch -n 5 df -h
+date
+cal
+uptime
+whoami
+hostname
+uname -a
+lsblk
+fdisk -l
+fdisk /dev/sda
+blkid
+lshw -short
+dmesg | less
+strace -e trace=openat ./myprogram
